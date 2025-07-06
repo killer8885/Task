@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.bundle-box {
+  max-width: 420px;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background-color: #f8fdfb;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.option.active {
+  border-color: #10a97f;
+  background-color: #e6fcf2;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+.option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.most-popular {
+  color: #10a97f;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.selectors {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.option.active .selectors {
+  display: flex;
+}
+
+.selectors div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.selectors select {
+  padding: 4px;
+  width: 80px;
+}
+
+.footer {
+  margin-top: 10px;
+}
+
+.shipping {
+  color: green;
+  font-size: 14px;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.add-btn {
+  margin-top: 20px;
+  background-color: #008858;
+  color: white;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+label {
+  font-weight: 500;
+}
